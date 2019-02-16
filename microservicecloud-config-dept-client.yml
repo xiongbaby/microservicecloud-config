@@ -33,7 +33,7 @@ eureka:
       service-url:
         defaultZone: http://eureka7001.com:7001/eureka/
     instance:
-      instance-id: microservicecloud-dept8001                      #别名
+      instance-id: dept-8001.com                      #别名
       prefer-ip-address: true                                     #是否显示IP地址
     
 #------------配置eureka的info信息----------- 
@@ -53,7 +53,7 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                           #mapper映射文件
   
 spring: 
-  profiles: test			#开发模式
+  profiles: test			#测试模式
   application: 
     name: microservicecloud-config-dept-client
   datasource:
@@ -73,7 +73,7 @@ eureka:
       service-url:
         defaultZone: http://eureka7001.com:7001/eureka/
     instance:
-      instance-id: microservicecloud-dept8001                      #别名
+      instance-id: dept-8001.com                      #别名
       prefer-ip-address: true                                     #是否显示IP地址
     
 #------------配置eureka的info信息----------- 
